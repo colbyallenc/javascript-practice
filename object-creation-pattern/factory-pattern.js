@@ -22,6 +22,33 @@ let car2 = carFactory(2013, 'blue','Infiniti')
 //  call the function and pass variables as the arguments:
 // carFactory(car1, car2);
 
+
+
+// _____________________________________________________________
+
+let peopleFactory = function(name, age, location){
+
+    let temp={}
+      temp.name=name;
+      temp.age=age;
+      temp.location=location;
+  
+      temp.printPerson = function(){
+        console.log('name: ' + temp.name + ' age: ' + temp.age + ' location: ' + temp.location );
+      }
+  
+  return temp;
+  
+  }
+  
+  
+  let person1 = peopleFactory("colby",25, 'Miami');
+  let person2 = peopleFactory("james",50, 'Atlanta');
+  
+  
+  person1.printPerson();
+  person2.printPerson();
+
 // console.log both cars:
 // console.log(car1, car2);
 
