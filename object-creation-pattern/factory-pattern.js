@@ -22,6 +22,13 @@ let car2 = carFactory(2013, 'blue','Infiniti')
 //  call the function and pass variables as the arguments:
 // carFactory(car1, car2);
 
+// console.log both cars:
+// console.log(car1, car2);
+
+// BEST way..
+car1.printFactory();
+car2.printFactory();
+
 
 
 // _____________________________________________________________
@@ -49,9 +56,3 @@ let peopleFactory = function(name, age, location){
   person1.printPerson();
   person2.printPerson();
 
-// console.log both cars:
-// console.log(car1, car2);
-
-// BEST way..
-car1.printFactory();
-car2.printFactory();
