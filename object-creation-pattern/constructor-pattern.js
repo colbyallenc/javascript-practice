@@ -21,3 +21,21 @@ car2.printCar();
 // ________________________________________________________________
 
 
+let personConstructor= function(name, age, location){
+
+    this.name=name;
+    this.age=age;
+    this.location=location;
+
+    this.printPerson = function(){
+        console.log('name: ' + this.name + ' age: ' + this.age + ' location: ' + this.location)
+    }
+}
+
+let person1 = new personConstructor("colby", 25, "miami");
+let person2 = new personConstructor("jame", 50, "Atlanta");
+
+person1.printPerson();
+person2.printPerson();
+// there is a lot of redundancy in constructor functions because it includes every variable when you go to use it
+
