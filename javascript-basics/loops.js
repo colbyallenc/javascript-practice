@@ -85,4 +85,21 @@ while(num<=50){
 }
 
 
+// Annoy-omatic: Are We there yet? Run until user says yes
+var answer = prompt(are we there yet?);
+while(answer !== "yes" && answer !== "yeah"){
+    var answer = prompt(are we there yet?);
+}
+alert(We made it!)
+
+// Bonus: check if string contains yes
+// Method: IndexOf
+// V.2
+var answer = prompt(are we there yet?);
+while(answer.indexOf("yes") === -1)
+//                              | this means that the word yes does not exist in our answer
+                                    {
+    var answer = prompt(are we there yet?);
+}
+alert(We made it!)
 
