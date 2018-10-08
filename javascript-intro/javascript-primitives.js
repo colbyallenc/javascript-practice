@@ -33,13 +33,20 @@
 // Boolean:
 // either true or false
 
+
+// Null vs Undefined:
+
 // Null:
 // these are values
 // only one null
+// doesn't exist at all
+// explicitly nothing
 
 // Undefined:
 // these are values
 // only one undefined
+// declared but not set to a value yet
+
 
 // Numbers and numeric operations
 
