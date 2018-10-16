@@ -6,7 +6,8 @@ const peopleProto = function(){
 
 }
 // each object gets a shared space called prototype
-// below i am creating defaults
+
+// creating defaults: 
 peopleProto.prototype.age = 0;
 peopleProto.prototype.name = "no name";
 peopleProto.prototype.city = "no city";
@@ -15,6 +16,7 @@ peopleProto.prototype.printPerson =function(){
     console.log(`${this.name}  ${this.age}  ${this.city}`)
 }
 
+//prototypes are being shadowed by this person, if any of this info is missing, if will provide the default
 var person1 = new peopleProto();
 person1.name = 'john';
 person1.age = 23;
