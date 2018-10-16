@@ -24,4 +24,7 @@ person1.city = 'CA';
 
 person1.printPerson();
 
+// disadvantage: you have to create an empty object and then properties of it.
+// creates a confusion
+
 
