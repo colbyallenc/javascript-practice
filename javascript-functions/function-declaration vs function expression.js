@@ -41,8 +41,11 @@ for(var i = 2; i <= num; i++ ){
 
 // write a function kebabToSnake() which takes a single kebab-cased string argument 
 // and returns the snake cased version
-
-
-
+function kababToSnake(str){
+    // replace all dashes with underscores
+    var newStr = str.replace(/-/g, "_");
+    // return str
+    return newStr;
+}
 
 
