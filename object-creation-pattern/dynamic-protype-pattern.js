@@ -6,7 +6,7 @@ const peopleDynamicProto = function(name, age, state){
     // if i dont find this function, create one.. within the prototype space
     if(typeof this.printPerson !== "function"){
         peopleDynamicProto.prototype.printPerson =function(){
-            console.log(`${this.name}  ${this.age}  ${this.city}`)
+            console.log(`${this.name}  ${this.age}  ${this.state}`)
         }
     }
 
